@@ -89,22 +89,130 @@ body {
 .carousel-caption h1 {
     font-size: 3.8rem;
     /* text shadow - probably delete */
-    text-shadow: 0 1rem 1rem rgba(0,0,0, .1);
+    text-shadow: 0 1rem 1rem rgba(0,0,0, .1); 
 
 }
+
+.border-primary {
+    border-top: .2rem solid #ef5326!important;
+}
+
+.carousel-caption h3 {
+    font-size: 2.2rem;
+    /* text shadow - probably delete */
+    text-shadow: 0 1rem 1rem rgba(0,0,0, .1); 
+}
+
+.btn-lg {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+}
+
+/* button 1 */
+.btn-danger {
+    background-color: #ef5326;
+    border: .05rem solid #ef5326;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: yellow!important;
+    border: .05rem solid yellow!important;
+}
+
+/* button 2 */
+.btn-primary {
+    background-color: #2b2b2b;
+    border: .05rem solid #2b2b2b;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: yellow!important;
+    border: .05rem solid yellow!important;
+}
+
+
 /*===== FIXED BACKGROUND IMG =====*/
+
+.fixed {
+    background-image: url('../img/matrix.jpg');
+    position: fixed;
+}
+
+.fixed-background {
+    padding: 10rem 0;
+}
 
 
 
 /*-- Emoji Navbar --*/
 
+.emoji {
+    background-image: linear-gradient(to right, #4981b3, #ac2615);
+    min-height: 0!important;
+    padding: .4rem 0!important;
+}
+
+.emoji .svg-inline--fa {
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+}
+
 
 
 /*============= FOOTER =============*/
 
+footer {
+    background-color: #2b2b2b;
+    padding: 1rem 2rem 3rem;
+}
+
+footer img {
+    height: 3.5rem;
+    margin: 1.5rem auto;
+}
+
+footer p,
+footer a,
+.socket a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.social li {
+    margin: 0 auto;
+}
+
+footer .svg-inline--fa {
+    font-size: 2.3rem;
+}
+
+footer .svg-inline--fa:hover {
+    color: #ef5326;
+}
+
+
+
 
 
 /*============= SOCKET =============*/
+
+.socket {
+    background-color: #222222;
+    border-top: .1rem solid #ef5326;
+}
 
 
 
@@ -113,9 +221,29 @@ body {
 /* Devices under 1199px (xl) */
 @media (max-width: 1199.98px) {
 
+    .carousel-caption h1 {
+        font-size: 2.8rem;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 1.8rem;
+    }
+
 }
-/* Devices under 768px (md) */
-@media (max-width: 767.98px) {
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-lg {
+        font-size: .95rem;
+    }
 
 }
 
